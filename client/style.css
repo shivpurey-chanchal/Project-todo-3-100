@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header h3 {
+  width: 30vw;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 22px;
+  color: blueviolet;
+}
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.bg{
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+form {
+  margin: 50px auto;
+  width: 40vw;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.formDiv {
+  text-align: center;
+  margin: auto;
+}
+input,
+textarea {
+  padding: 2px;
+  margin: 2px;
+  background-color: rgb(233, 233, 233);
+  outline: none;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  color: green;
+  border: 1px solid green;
+  transition: all 0.5s ease;
+}
+input[type="submit"]:hover {
+  background-color: green;
+  color: #fff;
+}
+.container {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  padding: 7px;
+  margin: 7px;
+}
+
+.card {
+  width: 300px;
+  padding: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.delete-btn {
+  outline: none;
+  color: rgb(245, 109, 109);
+  border: 1px solid rgb(245, 109, 109);
+  border-radius: 20px;
+  padding: 8px 18px;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+.delete-btn:hover {
+  background-color: rgb(245, 109, 109);
+  color: #fff;
+}
