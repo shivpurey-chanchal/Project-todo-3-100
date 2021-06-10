@@ -65,10 +65,7 @@ document.querySelector(".container").addEventListener("click", (e) => {
   if (e.target.className === "delete-btn") {
     deletePost(e.target.dataset.id);
   }
-  if (e.target.className === "edit-btn") {
-    console.log(e.target.className, "...........edit");
-    editPost(e.target.dataset.id)
-}});
+ });
 function deletePost(id) {
   console.log(id, "deletePOST");
   fetch("http://localhost:5000/delete/" + id, {
@@ -81,7 +78,4 @@ function deletePost(id) {
         location.reload();
       }
     });
-}
-function editPost(id, e){
-  
 }

@@ -47,13 +47,7 @@ app.delete("/delete/:id", (request, response) => {
     response.json(row);
   });
 });
-//patch
-app.patch("/update/:id", (request, response) => {
-  const data = request.body;
-  const { id } = request.params;
-  console.log(data, "body update", id, "id...");
-  response.json(id)
-});
+
 
 app.listen(process.env.PORT, () => {
   console.log(process.env.PORT);
